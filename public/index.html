@@ -4,47 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5a09999582.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Odibee+Sans&display=swap" rel="stylesheet">
+
     <title>CV</title>
 </head>
-<body style="margin-bottom: 400px;">
+<body>
     <header>
-        <h1>CV / Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar_cv">
+            <img class="avatar_img" src="images/photo_2021-07-24_15-29-04.jpg" alt="avatar">
+            <h1>Iulian Leu</h1>
+            <ul class="link_accounts">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
             </ul>
+            <ul class="navbar_links">
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <div class="robots">
+                <div class="robot_infinite">
+                    <div class="face_i"></div>
+                    <div class="head_i"></div>
+                    <div class="body_i"></div>
+                    <div class="left_i"></div>
+                    <div class="right_i"></div>
+                    <div class="eye1_i"></div>
+                    <div class="eye2_i"></div>
+                </div>
+                <div class="robot_hover">
+                    <input type="checkbox" id="switch-button">
+                    <label for="switch-button"><div class="switch"></div></label>
+                    <div class="face_h"></div>
+                    <div class="head_h"></div>
+                    <div class="body_h"></div>
+                    <div class="left_h"></div>
+                    <div class="right_h"></div>
+                    <div class="eye1_h"></div>
+                    <div class="eye2_h"></div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section id="about">
-            <h2>About</h2>
-            <img width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaG58ejAjEQ3CvMbKsLhSRdng4Bm2dGasJLQ&usqp=CAU" alt="avatar">
-            <p>Some info about me!</p>
+            <div class="about_container">            
+                <h2>ABOUT ME</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In cumque laboriosam perferendis quibusdam amet, similique, maxime praesentium tenetur molestias eum voluptatibus ducimus fuga provident itaque numquam soluta aperiam quidem magnam.</p>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="contact_container">
+                <h2>CONTACT</h2>
+            <ul>
+                <li>Tel: <a href="tel:+37367130526">Call me</a></li>
+                <li>Email: juliandifestio@gmail.com</li>
+                <li>Address
+                    <address>
+                        Visit us at:<br>
+                        Example.com<br>
+                        str. Sfîntul Gheorghe 21, Cheltuitori<br>
+                        Republic of Moldova
+                    </address>
+                </li>
+                <li>Website link: http://not-ready-yet.com</li>
+            </ul>
+            </div>
         </section>
         
         <section id="skills">
-            <h2>Skills</h2>
+            <div class="skills_container">
+                <h2>SKILLS</h2>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Bootstrap</li>
+                <li> HTML <button class="line html-line">73%</button></li>
+                <li> CSS <button class="line css-line">58%</button></li>
+                <li> JS <button class="line js-line">13%</button></li>
+                <li> PHP <button class="line php-line">5%</button></li>
+                <li> Laravel <button class="line laravel-line">0%</button></li>
+                <li> Bootstrap <button class="line bootstrap-line">17%</button></li>
             </ul>
+            </div>
+
         </section>
         
         <section id="experience">
-            <h2>Experience</h2>
-            <table>
+            <div class="experience_container">
+                <h2>EXPERIENCE</h2>
+            <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th>Period</th>
-                        <th>Place</th>
-                        <th>Position / Description</th>
+                        <th scope="col">Period</th>
+                        <th scope="col">Place</th>
+                        <th scope="col">Position | Description</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -52,10 +119,20 @@
                         <td>26 April 2021 - Present</td>
                         <td>Darwin</td>
                         <td>
-                            <section>
-                                <h3>Content Manager</h3>
-                                <p>Editing and ading new products on Websites Darwin / Enter</p>
-                            </section>
+                            <details>
+                                <summary>Content Manager</summary>
+                                <p>Editing and ading new products on Websites Darwin | Enter</p>
+                            </details>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2017 - 2021</td>
+                        <td>United Kingdom jobs</td>
+                        <td>
+                            <details>
+                                <summary>McDonald's | Morrisons | Tesco</summary>
+                                <p>Factories and Fast Food jobs</p>
+                            </details>
                         </td>
                     </tr>
                     <tr>
@@ -70,27 +147,11 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <ul>
-                <li>Tel: <a href="tel:+37367130526">Call me</a></li>
-                <li>Email: juliandifestio@gmail.com</li>
-                <li>Address
-                    <address>
-                        Visit us at:<br>
-                        Example.com<br>
-                        str. Sfîntul Gheorghe 21, Cheltuitori<br>
-                        Republic of Moldova
-                    </address>
-                </li>
-                <li>Website link: http://not-ready-yet.com</li>
-            </ul>
+            </div>
         </section>
     </main>
     <footer>
-        <div align="center">
+        <div class="copyright_text">
             Copyright &copy; 2021, Developmentaid
         </div>
     </footer>
